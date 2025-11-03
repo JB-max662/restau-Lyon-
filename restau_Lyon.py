@@ -98,7 +98,7 @@ noms_restaurants = ["Tous les restaurants"] + [resto['nom'] for resto in restaur
 nom_menu = ttk.OptionMenu(root, nom_var, nom_var.get(), *noms_restaurants)
 nom_menu.pack(pady=5)
 ttk.Button(root, text="Chercher par nom", command=chercher_par_nom).pack(pady=10)
-
+#
 # Lancer l'application
 root.mainloop()
 
